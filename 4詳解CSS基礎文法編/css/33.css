@@ -1,0 +1,8 @@
+img {
+  float: right;
+}
+
+h2 {
+  /* display:blockのみ使用可能。画像より下にh2を配置; */
+  clear: right;
+}

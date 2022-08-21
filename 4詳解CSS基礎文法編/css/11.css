@@ -1,0 +1,10 @@
+main {
+  font-size: 32px;
+  /* 2em：sectionにも32pxの2倍である64pxの行間が作られる */
+  /* line-height: 2em; */
+  line-height: 2;
+}
+
+section {
+  font-size: 16px;
+}

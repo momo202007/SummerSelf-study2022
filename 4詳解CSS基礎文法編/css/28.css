@@ -1,0 +1,32 @@
+.box1 {
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  /* 絶対配置。画面左上基準。 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* 重なり順の制御。数字が大きい方が前にくる */
+  z-index: 3;
+}
+
+.box2 {
+  background-color: skyblue;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+
+.box3 {
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  z-index: 1;
+}
+

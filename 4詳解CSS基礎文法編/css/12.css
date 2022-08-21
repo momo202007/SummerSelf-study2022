@@ -1,0 +1,10 @@
+p {
+  line-height: 5;
+  background-color: pink;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* opacity：要素全体・画像の透明度を調整 */

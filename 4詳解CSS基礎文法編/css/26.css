@@ -1,0 +1,26 @@
+.box1 {
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+}
+
+.box2 {
+  background-color: skyblue;
+  width: 100px;
+  height: 100px;
+  /* position: static; */
+
+  /* staticを基準として移動 */
+  /* position: relative; */
+
+  /* 画面の左上を基準として移動。固定配置。 */
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
+
+.box3 {
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,12 @@
+header {
+  height: 80px;
+  /* background-color: pink;
+  background-image: url(../img/header.png); */
+  /* 左上基準で伸縮 */
+  /* background-size: cover; */
+  /* 画像の中心を基準に伸縮 */
+  /* background-position: center; */
+
+  /* 一括指定(sizeとpositionは一緒に指定) */
+  background: center/cover pink url(../img/header.png);
+}
