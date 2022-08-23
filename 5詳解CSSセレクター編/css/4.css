@@ -1,0 +1,15 @@
+/* [target] { */
+
+/* 完全一致 */
+/* [href="#top"] { */
+
+/* 前方一致 */
+/* [href^="https"] { */
+
+/* 後方一致 */
+/* [href$="dotinstall"] { */
+
+/* 部分一致 */
+[href*="com"] {
+  font-weight: bold;
+}
