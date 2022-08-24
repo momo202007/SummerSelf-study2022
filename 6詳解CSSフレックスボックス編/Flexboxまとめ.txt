@@ -1,0 +1,60 @@
+★Flex Container
+
+【flex-direction：主軸方向を決める】
+◎flex-direction: row = 基本形。主軸が左から右(→)。交差軸が上から下(↓)。
+◎flex-direction: row-reverse = 主軸が右から左(←)。交差軸が上から下(↓)。
+◎flex-direction: column = 主軸が上から下(↓)。交差軸が左から右(→)。
+◎flex-direction: column-reverse = 主軸が下から上(↑)。交差軸が左から右(→)。
+
+【justify-content：主軸に沿って要素の揃え方を決める】
+◎justify-content: flex-start = 主軸の始点である左揃え。
+◎justify-content: flex-end = 主軸の終点である右揃え。
+◎justify-content: flex-center = 主軸に沿って中央揃え。
+◎justify-content: space-between = 要素の間に余白を均等配置。
+
+【align-items：交差軸に沿って要素の揃え方を決める】
+◎align-items: flex-start = 交差軸の始点である上揃え。
+◎align-items: flex-end = 交差軸の終点である下揃え。
+◎align-items: flex-center = 交差軸に沿って中央揃え。
+
+【 flex-wrap：並べたい要素の幅がコンテナを超える時に使用 】
+◎flex-wrap: nowrap = 初期値。折り返さずに各要素の幅が縮まる。
+◎flex-wrap: wrap = はみ出した要素を交差軸方向に折り返す。
+◎flex-wrap: wrap-reverse = 交差軸の方向が反転。
+
+【 align-content：交差軸方向に余裕があり、交差軸方向に揃えたい場合に使用 】
+◎align-content: flex-start = 交差軸の始点である上揃え。
+◎align-content: flex-end = 交差軸の終点である下揃え。
+◎align-content: center = 交差軸に沿って中央揃え。
+◎align-content: space-between = 要素を上と下に配置し、間に余白を配置。
+
+
+★flex-flow：flex-directionとflex-wrapを一括指定
+
+
+★Flex-Item
+
+【 align-self：交差軸方向の揃えを指定 】
+◎align-self: flex-start = 交差軸の始点である上揃え。
+◎align-self: flex-end = 交差軸の終点である下揃え。
+◎align-self: flex-center = 交差軸に沿って中央揃え。
+
+【 order：順番を指定。初期値は0で数字が大きいほど、後に並べられる。 】
+
+【 flex-basis：要素のサイズを決める。主軸方向に伸び縮みするため、flex-direction:rowの場合は要素の幅／flex-direction:columnの場合は要素の高さを示す。 】
+◎flex-basis: auto = 要素に設定された幅。初期値。
+◎flex-basis: 200px = 任意の値も設定できる。widthが設定されていてもこちらの幅になる。ただし、max-widthの方が優先される。
+
+【 flex-grow：主軸方向に余白がある時に各要素をどれだけ伸ばすか比率を指定 】
+◎flex-grow: 0 = 余白があっても伸ばさない。初期値。
+
+【 flex-shrink：Containerの幅が足りなかった時に各要素をどれだけ縮めるかを指定 】
+◎flex-shrink: 1 = 初期値。
+◎flex-shrink: 0 = 0を指定したものは縮まない。
+
+
+★flex：flex-growとflex-shrinkとflex-basisを一括指定
+◎flex: initial = それぞれの初期値が設定される。
+◎flex: auto = flex-grow: 1／flex-shrink: 1／flex-basis: auto
+◎flex: none = flex-grow: 0／flex-shrink: 0／flex-basis: auto
+◎flex: 1 = flex-grow: 1／flex-shrink: 1／flex-basis: 0%
